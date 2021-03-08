@@ -3,10 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import PageNotFound from './Components/PageNotFound';
+import MyCourses from './Components/MyCourses';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Switch>
+        <Route path="/" exact component={App}/>
+        <Route path="/dashboard" exact component={App}/>
+        <Route path="/mycourses" exact component={MyCourses}/>
+        <Route component={PageNotFound} />
+      </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

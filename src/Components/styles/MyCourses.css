@@ -1,0 +1,28 @@
+.Courses {
+    border: 1px solid black;
+    padding: 10px;
+    grid-area: MyCourses;
+}
+
+.CourseList{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.CourseRow {
+    padding: 5px;
+    border: 1px solid black;
+    flex: 1;
+    margin: 4px;
+}
+
+.CourseImage {
+    width: 50px;
+}
+
+.progress {
+    width: 100%;
+    height: 1.5rem;
+}

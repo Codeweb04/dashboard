@@ -1,0 +1,15 @@
+.profile {
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px;
+    margin-right: 20px;
+}
+
+.profile #notification {
+    margin-right: 40px;
+    cursor: pointer;
+} 
+
+.profile #ExpandMore {
+    cursor: pointer;
+}

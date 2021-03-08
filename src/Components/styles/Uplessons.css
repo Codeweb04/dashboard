@@ -1,0 +1,17 @@
+.lessonRow {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.lessons {
+    border: 1px solid black;
+    padding: 10px;
+    grid-area: UpLessons;
+}
+
+.square {
+    border: 1px solid black;
+    padding: 5px;
+}
