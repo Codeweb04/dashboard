@@ -6,7 +6,7 @@ function Sidebar() {
     return (
         <div className="Sidebar">
             <div id="logoContainer">
-                <img id="logo" src="/images/logo.png" alt="logo" />
+                <img id="logo" src="../images/logo.png" alt="logo" />
             </div>
             <div className="menu">
                 <ul className="SidebarList">

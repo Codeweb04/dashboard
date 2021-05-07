@@ -6,14 +6,18 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import PageNotFound from './Components/PageNotFound';
 import MyCourses from './Components/MyCourses';
+import Home from './Components/Home';
+import Forum from './Components/Forum';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Switch>
-        <Route path="/" exact component={App}/>
+        <Route path="/" exact component={Home}/>
         <Route path="/dashboard" exact component={App}/>
         <Route path="/mycourses" exact component={MyCourses}/>
+        <Route path="/home" exact component={Home}/>
+        <Route path="/forum" exact component={Forum}/>
         <Route component={PageNotFound} />
       </Switch>
     </Router>

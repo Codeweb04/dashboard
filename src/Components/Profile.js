@@ -3,12 +3,12 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import "./styles/Profile.css"
-function profile() {
+function profile(props) {
 
     return (
         <div className="profile">
             <NotificationsIcon id="notification"/>
-            <p>UserName</p>
+            <p>{props.uname}</p>
             <AccountCircleIcon />
             <ExpandMoreIcon id="ExpandMore"/>
         </div>

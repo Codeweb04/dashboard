@@ -8,12 +8,13 @@ import MyCourses from './Components/MyCourses';
 import HwProgress from './Components/HwProgress';
 import Graph from './Components/Graph';
 
-function App() {
+
+function App(props) {
   return (
     <div className="App">
         <Sidebar />
         <div className="container">
-          <Profile />
+          <Profile uname={props.location.state.uname}/>
           <div className="GridContainer">
             <Uplessons  />
             <Tasks  />
