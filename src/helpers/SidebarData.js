@@ -12,10 +12,6 @@ export const SideBarData = [
         link: "/mycourses",
     },
     {
-        title: "ACHIEVEMENTS",
-        link: "/achievements",
-    },
-    {
         title: "FORUM",
         link: "/forum",
     },

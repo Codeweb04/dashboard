@@ -8,6 +8,7 @@ import PageNotFound from './Components/PageNotFound';
 import MyCourses from './Components/MyCourses';
 import Home from './Components/Home';
 import Forum from './Components/Forum';
+import Answer from './Components/Answer';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -18,6 +19,7 @@ ReactDOM.render(
         <Route path="/mycourses" exact component={MyCourses}/>
         <Route path="/home" exact component={Home}/>
         <Route path="/forum" exact component={Forum}/>
+        <Route path="/answer" exact component={Answer}/>
         <Route component={PageNotFound} />
       </Switch>
     </Router>

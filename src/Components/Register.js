@@ -12,11 +12,9 @@ function Register() {
 
     const RedirectNow = (uname) => {
       if (registered) {
+        sessionStorage.setItem('user', uname)
         history.push({
-          pathname: '/dashboard',
-          state: {
-            uname: uname
-           }  
+          pathname: '/dashboard', 
         })
       }
     }

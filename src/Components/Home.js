@@ -32,12 +32,10 @@ function Home() {
     }}) 
         .then(res => {
             if (res.status === 202) {
+                sessionStorage.setItem('user', res.data.message)
                 history.push({
                 pathname: '/dashboard',
-                state: {
-                  uname: res.data.message 
-                 }  
-              })
+              })              
             } else {
               setVisible(true)
             }

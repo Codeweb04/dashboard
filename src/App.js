@@ -14,7 +14,7 @@ function App(props) {
     <div className="App">
         <Sidebar />
         <div className="container">
-          <Profile uname={props.location.state.uname}/>
+          <Profile uname={sessionStorage.getItem('user')}/>
           <div className="GridContainer">
             <Uplessons  />
             <Tasks  />
