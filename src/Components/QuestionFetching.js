@@ -1,10 +1,11 @@
 import axios from 'axios'
 import React, {useState, useEffect} from 'react'
-import {Redirect} from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
 function QuestionFetching() {
 
     const [questions, setQuestions] = useState([])
+    const history=useHistory()
 
     useEffect(() => {
         const fetch = async () => { 
@@ -26,7 +27,10 @@ function QuestionFetching() {
         <div>
             <ul>
                 {
-                    questions.map(question => <li onClick={() => <Redirect to='/answer' />} key={question._id}>{question.question}</li>)
+                    questions.map(question => <li onClick = {() => {history.push({
+                        pathname: '/answer',
+                        question: question
+                      })}} key={question._id}>{question.question}</li>)
                 }
             </ul>
         </div>

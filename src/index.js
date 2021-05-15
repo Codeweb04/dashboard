@@ -17,7 +17,7 @@ ReactDOM.render(
         <Route path="/" exact component={Home}/>
         <Route path="/dashboard" exact component={App}/>
         <Route path="/mycourses" exact component={MyCourses}/>
-        <Route path="/home" exact component={Home}/>
+        <Route path="/C3" exact component={Home}/>
         <Route path="/forum" exact component={Forum}/>
         <Route path="/answer" exact component={Answer}/>
         <Route component={PageNotFound} />
